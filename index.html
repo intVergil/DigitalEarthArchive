@@ -268,10 +268,10 @@
 			viewer.dataSources.removeAll();
 			viewer.dataSources.add(Cesium.KmlDataSource.load('kml/yokohama_pass.kml'));
 
-			if(document.check_box.local1.checked){
+			if(document.check_box.local1.click()){
 				viewer.dataSources.add(Cesium.KmlDataSource.load('kml/jp.kmz'));
   			}
-  			if(document.check_box.local2.checked){
+  			if(document.check_box.local2.click()){
 				viewer.dataSources.add(Cesium.KmlDataSource.load('kml/en.kmz'));
   			}
   			if(document.check_box.local3.checked){

@@ -40,18 +40,21 @@
 			<span class="icon-font">menu</span>
 		</div>
 	</div> -->
-<!--
+
 	<div id="check_bar">
 		<form name="check_box">
-			<input type="checkbox" name="local1" checked="checked">local good player（インタビュー）<br>
+<!-- 			<input type="checkbox" name="local1" checked="checked">local good player（インタビュー）<br>
 			<input type="checkbox" name="local2" checked="checked">Local good files（地域の情報）<br>
-			<input type="checkbox" name="local3" checked="checked">地域の課題<br>
+			<input type="checkbox" name="local3" checked="checked">地域の課題<br> -->
+			<input type="checkbox" name="local1" checked="checked">Japanese<br>
+			<input type="checkbox" name="local2" checked="checked">English<br>
+			<input type="checkbox" name="local3" checked="checked">Chinese<br>
 		</form>
 	</div>
--->
+
 	<div id="menubar">
-		<div id="menu_check" class="menu_button"><img src="img/icon_check.png"></div>
-<!--		<div id="menu_about" class="menu_button"><img src="img/icon_about.png"></div>
+<!--		<div id="menu_check" class="menu_button"><img src="img/icon_check.png"></div>
+		<div id="menu_about" class="menu_button"><img src="img/icon_about.png"></div>
 -->
 		<div id="c_place" class="menu_button"><img src="img/icon_place.png"></div>
 <!--		<div id="zentai" class="menu_button"><img src="img/icon_view.png"></div>
@@ -266,13 +269,13 @@
 			viewer.dataSources.add(Cesium.KmlDataSource.load('kml/yokohama_pass.kml'));
 
 			if(document.check_box.local1.checked){
-				viewer.dataSources.add(Cesium.KmlDataSource.load('kml/yokohama_player.kml'));
+				viewer.dataSources.add(Cesium.KmlDataSource.load('kml/jp.kmz'));
   			}
   			if(document.check_box.local2.checked){
-				viewer.dataSources.add(Cesium.KmlDataSource.load('kml/yokohama_file.kml'));
+				viewer.dataSources.add(Cesium.KmlDataSource.load('kml/en.kmz'));
   			}
   			if(document.check_box.local3.checked){
-				viewer.dataSources.add(Cesium.KmlDataSource.load('kml/yokohama_task.kml'));
+				viewer.dataSources.add(Cesium.KmlDataSource.load('kml/cn.kmz'));
   			}
 		})
 
